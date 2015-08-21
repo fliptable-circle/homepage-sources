@@ -7,6 +7,7 @@ cp -r build/.git ./gittemp
 bundle exec weaver build
 cp -r ./gittemp build/.git
 pushd build
+echo fliptable.astrobunny.net > CNAME
 git add .
 git add -u
 git commit -m "update `date`"
