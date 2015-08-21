@@ -1,0 +1,73 @@
+require_relative "main.rb"
+
+def create_page(url, title, &block)
+
+	topnav_page url, "(╯°□°）╯︵ ┻━┻ | #{title}" do
+
+		menu do
+			nav "Home", :home, "/"
+			nav "About", :newspaper_o, "/about"
+			nav "Astrobunny", :child, "/astrobunny"
+			nav "TronBonne", :child, "/tronbonne"
+			nav "Kaiyochin", :child, "/kaiyochin"
+		end
+
+		row do
+			col 2, xs: 0, sm: 0, md: 1 do
+			end
+
+			col 8, xs: 12, sm: 12, md: 10 do
+
+				image "chino.png", rounded_corners: true
+
+				hr
+
+				div &block
+			end
+
+			col 2, xs: 0, sm: 0, md: 1 do
+			end
+		end
+
+	end
+
+end
+
+create_page "", "home" do
+
+	h1 "News"
+
+	ibox do
+		title { h2 "コミケ申込書出した！" }
+		image "small_cut.png"
+		hr
+		p "ギリギリまでコミケのサークルカットを用意しました。我々のデビュー本はツインテールの本です！お楽しみにしてください！"
+	end
+
+	ibox do
+		title { h2 "サークルを作ってみた" }
+		p "やっとサークル作った！"
+	end
+
+	hr
+
+	h2 "Fliptable (╯°□°）╯︵ ┻┻ "
+	h3 "同人誌を作る人生。ちゃぶ台返し人生。"
+end
+
+create_page "about", "about" do
+	h1 "About"
+end
+
+create_page "astrobunny", "astrobunny" do
+	h1 "astrobunny"
+end
+
+
+create_page "tronbonne", "tron bonne" do
+	h1 "Tron Bonne"
+end
+
+create_page "kaiyochin", "kaiyochin" do
+	h1 "kaiyochin"
+end
