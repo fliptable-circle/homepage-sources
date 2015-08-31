@@ -1,0 +1,19 @@
+include "main.rb"
+require "yaml"
+
+blog_files = Dir['blog/*.md'].reverse!
+
+blog_files.each do |md_file|
+
+	meta = YAML.load_file(md_file)
+	puts post_name_to_url_path(md_file)
+
+	create_page post_name_to_url_path(md_file), meta["title"] do
+
+		ibox do
+			h1 meta["title"]
+			h3 meta["date"]
+			render md_file
+		end
+	end
+end
