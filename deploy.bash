@@ -8,6 +8,7 @@ bundle exec weaver build
 cp -r ./gittemp build/.git
 pushd build
 echo fliptable.astrobunny.net > CNAME
+cp 404/index.html 404.html
 git add .
 git add -u
 git commit -m "update `date`"

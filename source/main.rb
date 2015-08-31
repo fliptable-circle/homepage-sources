@@ -20,7 +20,7 @@ def create_page(url, title, options={}, &block)
 				if options[:title_image]
 					image options[:title_image], rounded_corners: true
 				else
-					image "chino-title.png", rounded_corners: true
+					image "chino-title.png", rounded_corners: :top
 				end
 
 				hr

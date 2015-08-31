@@ -5,49 +5,144 @@ include "main.rb"
 
 create_page "", "home", title_image: "chino.png" do
 
-	h1 "News"
+	row do
+		col 8, xs: 12 do 
 
-	blog_files = Dir['blog/*.md'].reverse!
+			h1 "News"
 
-	blog_files.each do |md_file|
+			blog_files = Dir['blog/*.md'].reverse!
 
-		meta = YAML.load_file(md_file)
+			blog_files.each do |md_file|
 
-		ibox do
-			title do 
-				a href: "news/" + post_name_to_url_path(md_file) do
-					h3 do 
-						text meta["title"]
-						span meta["date"], :class => "pull-right", style: "font-size: 0.7em; font-weight: normal"
+				meta = YAML.load_file(md_file)
+
+				ibox do
+					title do 
+						a href: "news/" + post_name_to_url_path(md_file) do
+							h3 do 
+								text meta["title"]
+								span meta["date"], :class => "pull-right", style: "font-size: 0.7em; font-weight: normal"
+							end
+						end
 					end
+
+					render md_file
 				end
+
 			end
 
-			render md_file
 		end
 
-	end
+		col 4, xs: 12 do
 
+			h3 "Members"
+
+			ul do
+				li { a "Astrobunny", href: "/astrobunny" }
+				li { a "TronBonne", href: "/tronbonne" }
+				li { a "Kaiyochin", href: "/kaiyochin" }
+			end
+
+			h3 "Twitter"
+
+			text <<-CONTENT
+			<a class="twitter-timeline" href="https://twitter.com/fliptable_net" data-widget-id="638264395332612096">Tweets by @fliptable_net</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			CONTENT
+		end
+	end
 
 	hr
 
 	h2 "Fliptable (╯°□°）╯︵ ┻┻ "
 	h3 "同人誌を作る人生。ちゃぶ台返し人生。"
+
+end
+
+
+create_page "404", "なんで！？" do
+	ibox do
+		h1 "404ってなにぃぃぃぃ！？"
+
+		hr
+
+		h3 "どうやらお求めのページが時空のモンスターに飲み込まれしまいました。"
+
+	end
 end
 
 create_page "about", "about" do
-	h1 "About"
+	ibox do
+		h1 "About"
+
+		hr
+
+		p "コミケで友達のブースを手伝った時に急に同人を描きたくなった私たち：　astrobunny, tron bonne, kaiyochin の三人でサークルの名前を考えて悩んだときいつもむかつくになったら卓袱台返を思い出した。この事ででサークルの名前が生まれました。"
+
+		p "基本的にastrobunnyはツインテールがついてるかわいいアニメ少女を書くのが好き、tron bonneはスプラトゥーン、ブレイブリーデフォルトとロックマン系が好き、そしてkaiyochinはプリキュアのものを描きたい。私たち三人でバラバラな作品を作る事になるかもしれないけど、どうぞよろしくお願いします。"
+
+	end
 end
 
 create_page "astrobunny", "astrobunny" do
-	h1 "astrobunny"
+
+	ibox do
+		h1 "astrobunny"
+
+		hr
+
+		p "Fliptableのリーダーです。好きなアニメはごちうさ、らきすた、K-ON、ARIA、のんのんびよりとか…　とにかく愉快でのんびりのアニメが好きです。"
+
+		p "柊かがみは俺の嫁だ。近づかないでくれ"
+
+		p "ツインテールも好き"
+
+		p ""
+
+		hr
+
+
+		h3 "Profile"
+
+		table class: "table" do
+			tr do
+				th "name"
+				th "link"
+			end
+
+			tr { td "pixiv"; td { link "http://pixiv.me/astrobunny" } }
+			tr { td "twitter"; td { link "http://twitter.com/azusa_nakano" } }
+			tr { td "homepage"; td { link "http://astrobunny.net" } }
+		end
+
+
+		hr
+
+		h3 "Likes"
+
+		a href: "http://ragho.net" do
+			image "extern/ragho.gif"
+		end 
+
+		a href: "http://dmyo.com" do
+			image "extern/dmyo.gif"
+		end 
+
+	end
+
 end
 
 
 create_page "tronbonne", "tron bonne" do
-	h1 "Tron Bonne"
+	ibox do
+		h1 "Tron Bonne"
+		hr
+	end
 end
 
 create_page "kaiyochin", "kaiyochin" do
-	h1 "kaiyochin"
+	ibox do
+		h1 "kaiyochin"
+		hr
+	end
 end
