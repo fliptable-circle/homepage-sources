@@ -5,7 +5,9 @@ include "main.rb"
 
 create_page "", "home", title_image: "chino.png" do
 
+
 	row do
+
 		col 8, xs: 12 do 
 
 			h1 "News"
@@ -38,16 +40,28 @@ create_page "", "home", title_image: "chino.png" do
 			h3 "Members"
 
 			ul do
-				li { a "Astrobunny", href: "/astrobunny" }
+				li { a "Astrobunny", href: "/astrobunny"; }
 				li { a "TronBonne", href: "/tronbonne" }
 				li { a "Kaiyochin", href: "/kaiyochin" }
 			end
 
+			h3 "astrobunny Pixiv"
+
+			text <<-ENDOFCONTENT
+				<iframe style="background:transparent;" width="200" height="200" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="http://embed.pixiv.net/blogparts.php?md=m&id=astrobunny_77d4448a60fcb28b94e4968f4a904359&logoColor=0x258FB8&bgColor=0xFFFFFF&btnColor=0xFFFFFF&allowColor=0x258FB8&nanameColor=0xEDEDED&wakuColor=0x999999&tabColor=0xFF9900&fontColor=0x000000"></iframe>
+
+			ENDOFCONTENT
+			h3 "kaiyochin Pixiv"
+
+			text <<-ENDOFKAIYOCHINPIXIV
+				<iframe style="background:transparent;" width="170" height="200" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="http://embed.pixiv.net/blogparts.php?md=m&id=protomanv89_52975022944455ffb66f5b6b7bb29835&logoColor=0x258FB8&bgColor=0xFFFFFF&btnColor=0xFFFFFF&allowColor=0x258FB8&nanameColor=0xEDEDED&wakuColor=0x999999&tabColor=0xFF9900&fontColor=0x000000"></iframe>
+			ENDOFKAIYOCHINPIXIV
+
 			h3 "Twitter"
 
 			text <<-CONTENT
-			<a class="twitter-timeline" href="https://twitter.com/fliptable_net" data-widget-id="638264395332612096">Tweets by @fliptable_net</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<a class="twitter-timeline" href="https://twitter.com/fliptable_net" data-widget-id="638264395332612096">Tweets by @fliptable_net</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			CONTENT
 		end
 	end
