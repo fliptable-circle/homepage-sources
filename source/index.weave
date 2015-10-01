@@ -77,6 +77,10 @@ create_page "about", "about" do
 
 		hr
 
+		image "primenumbers.png"
+
+		hr
+
 		p "コミケで友達のブースを手伝った時に急に同人を描きたくなった私たち：　astrobunny, tron bonne, kaiyochin の三人でサークルの名前を考えて悩んだときいつもむかつくになったら卓袱台返を思い出した。この事ででサークルの名前が生まれました。"
 
 		p "基本的にastrobunnyはツインテールがついてるかわいいアニメ少女を書くのが好き、tron bonneはスプラトゥーン、ブレイブリーデフォルトとロックマン系が好き、そしてkaiyochinはプリキュアのものを描きたい。私たち三人でバラバラな作品を作る事になるかもしれないけど、どうぞよろしくお願いします。"
@@ -88,6 +92,18 @@ create_page "astrobunny", "astrobunny" do
 
 	ibox do
 		h1 "astrobunny"
+
+		hr
+
+		row do
+			col 3, sm:2, xs:0 do
+			end
+			col 6, sm:8, xs:12 do
+				image "aria.png"
+			end
+			col 3, sm:2, xs:0 do
+			end
+		end
 
 		hr
 
@@ -161,7 +177,7 @@ create_page "kaiyochin", "kaiyochin" do
 		p "これからもどうぞよろしくお願いします"
 
 		br
-		
+
 		table class: "table" do
 			tr do
 				th "name"
