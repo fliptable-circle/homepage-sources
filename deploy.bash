@@ -4,7 +4,7 @@ git config --global user.name "David Siaw (via Circle CI)"
 
 git clone git@github.com:fliptable-circle/fliptable-circle.github.io.git build
 cp -r build/.git ./gittemp
-bundle exec weaver build
+bundle exec weaver build -r https://fliptable.astrobunny.net
 cp -r ./gittemp build/.git
 pushd build
 echo fliptable.astrobunny.net > CNAME
