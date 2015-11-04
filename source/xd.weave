@@ -1,0 +1,5 @@
+center_page "", "XD" do
+	h1 "meow"
+	hr
+	p "hello"
+end 

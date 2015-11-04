@@ -1,0 +1,68 @@
+include "main.rb"
+
+create_page "", "astrobunny" do
+
+	ibox do
+		h1 "astrobunny"
+
+		hr
+
+		row do
+			col 3, sm:2, xs:0 do
+			end
+			col 6, sm:8, xs:12 do
+				image "aria.png"
+			end
+			col 3, sm:2, xs:0 do
+			end
+		end
+
+		hr
+
+		p "Fliptableのastrobunnyです。好きなアニメはごちうさ、らきすた、K-ON、ARIA、のんのんびよりとか…　とにかく愉快でのんびりのアニメが好きです。"
+
+		p "柊かがみは俺の嫁だ。近づかないでくれ"
+
+		p "ツインテールも好き"
+
+		p ""
+
+		hr
+
+
+		h3 "Profile"
+
+		table class: "table" do
+			tr do
+				th "name"
+				th "link"
+			end
+
+			tr { td "pixiv"; td { link "http://pixiv.me/astrobunny" } }
+			tr { td "twitter"; td { link "http://twitter.com/astrobunny" } }
+			tr { td "homepage"; td { link "http://astrobunny.net" } }
+		end
+
+
+		hr
+
+		h3 "Likes"
+
+		a href: "http://5-y.2-d.jp" do
+			image "extern/5-y.jpg"
+		end 
+
+		a href: "http://ragho.net" do
+			image "extern/ragho.gif"
+		end 
+
+		a href: "http://dmyo.com" do
+			image "extern/dmyo.gif"
+		end 
+
+
+
+
+	end
+
+end

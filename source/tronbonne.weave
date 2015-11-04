@@ -1,0 +1,34 @@
+include "main.rb"
+
+create_page "", "tron bonne" do
+	ibox do
+		h1 "Tron Bonne"
+		hr
+
+		row do
+			col 3, sm:2, xs:0 do
+			end
+			col 6, sm:8, xs:12 do
+				image "tronbonne/edea.png"
+			end
+			col 3, sm:2, xs:0 do
+			end
+		end
+
+		br
+
+		p "Fliptableのトロン・ボーンアート（Tron Bonne Art) です。好きなアニメはアイドルマスター、らき☆すた、ラブライブ、デュラララ！、さようなら絶望先生、トライガンなど。しかし、アニメよりゲームが気に入てます。私の好きなシリーズはBDFF,ブレセカ、逆転裁判、どうぶつの森、スプラトゥーン、蒼き雷霆（アームドブルー）ガンヴォルト、ロックマンシリーズとマイティーナンバーナイン！よろしくお願いします！"
+
+		p "I’m Fliptable’s very own Tron Bonne Art! Astrobunny and I decided to come together as Fliptable! I really love anime like Idolmaster (Namco and CG~!), Lucky Star, Love Live!, Durarara!, Sayonara Zetsubou Sensei, and Trigun! While, I love anime games are really my passion. I really love games like the Bravely Series (Default and Second), Ace Attorney, Animal Crossing, Splatoon, Azure Striker Gunvolt, Mega man, and Mighty No. 9! I hope you guys enjoy my work!"
+
+
+		table class: "table" do
+			tr do
+				th "name"
+				th "link"
+			end
+
+			tr { td "pixiv"; td { link "http://www.pixiv.net/member.php?id=3438138" } }
+		end
+	end
+end

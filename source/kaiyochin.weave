@@ -1,0 +1,36 @@
+include "main.rb"
+
+create_page "", "kaiyochin" do
+	ibox do
+		h1 "kaiyochin"
+
+		hr
+
+		row do
+			col 4 do
+			end
+			col 4 do
+				image "kaiyochin/color-erika.png"
+			end
+			col 4 do
+			end
+		end
+
+		p "Fliptableのかいよちんす。好きなアニメはなのは、プリキュアとアイドルマスターです"
+		
+		p "これからもどうぞよろしくお願いします"
+
+		br
+
+		table class: "table" do
+			tr do
+				th "name"
+				th "link"
+			end
+
+			tr { td "pixiv"; td { link "http://www.pixiv.net/member.php?id=6909681	" } }
+			tr { td "twitter"; td { link "http://twitter.com/protomanV89" } }
+
+		end
+	end
+end

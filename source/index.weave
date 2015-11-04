@@ -20,7 +20,7 @@ create_page "", "home", title_image: "chino.png" do
 
 				ibox do
 					title do 
-						a href: "news/" + post_name_to_url_path(md_file) do
+						link "/news/#{post_name_to_url_path(md_file)}/" do
 							h3 do 
 								text meta["title"]
 								span meta["date"], :class => "pull-right", style: "font-size: 0.7em; font-weight: normal"
@@ -40,9 +40,9 @@ create_page "", "home", title_image: "chino.png" do
 			h3 "Members"
 
 			ul do
-				li { a "Astrobunny", href: "/astrobunny"; }
-				li { a "TronBonne", href: "/tronbonne" }
-				li { a "Kaiyochin", href: "/kaiyochin" }
+				li { link "/astrobunny/", "Astrobunny" }
+				li { link "/tronbonne/", "TronBonne" }
+				li { link "/kaiyochin/", "Kaiyochin" }
 			end
 
 
@@ -108,131 +108,3 @@ create_page "about", "about" do
 	end
 end
 
-create_page "astrobunny", "astrobunny" do
-
-	ibox do
-		h1 "astrobunny"
-
-		hr
-
-		row do
-			col 3, sm:2, xs:0 do
-			end
-			col 6, sm:8, xs:12 do
-				image "aria.png"
-			end
-			col 3, sm:2, xs:0 do
-			end
-		end
-
-		hr
-
-		p "Fliptableのastrobunnyです。好きなアニメはごちうさ、らきすた、K-ON、ARIA、のんのんびよりとか…　とにかく愉快でのんびりのアニメが好きです。"
-
-		p "柊かがみは俺の嫁だ。近づかないでくれ"
-
-		p "ツインテールも好き"
-
-		p ""
-
-		hr
-
-
-		h3 "Profile"
-
-		table class: "table" do
-			tr do
-				th "name"
-				th "link"
-			end
-
-			tr { td "pixiv"; td { link "http://pixiv.me/astrobunny" } }
-			tr { td "twitter"; td { link "http://twitter.com/azusa_nakano" } }
-			tr { td "homepage"; td { link "http://astrobunny.net" } }
-		end
-
-
-		hr
-
-		h3 "Likes"
-
-		a href: "http://ragho.net" do
-			image "extern/ragho.gif"
-		end 
-
-		a href: "http://dmyo.com" do
-			image "extern/dmyo.gif"
-		end 
-
-	end
-
-end
-
-
-create_page "tronbonne", "tron bonne" do
-	ibox do
-		h1 "Tron Bonne"
-		hr
-
-		row do
-			col 3, sm:2, xs:0 do
-			end
-			col 6, sm:8, xs:12 do
-				image "tronbonne/edea.png"
-			end
-			col 3, sm:2, xs:0 do
-			end
-		end
-
-		br
-
-		p "Fliptableのトロン・ボーンアート（Tron Bonne Art) です。好きなアニメはアイドルマスター、らき☆すた、ラブライブ、デュラララ！、さようなら絶望先生、トライガンなど。しかし、アニメよりゲームが気に入てます。私の好きなシリーズはBDFF,ブレセカ、逆転裁判、どうぶつの森、スプラトゥーン、蒼き雷霆（アームドブルー）ガンヴォルト、ロックマンシリーズとマイティーナンバーナイン！よろしくお願いします！"
-
-		p "I’m Fliptable’s very own Tron Bonne Art! Astrobunny and I decided to come together as Fliptable! I really love anime like Idolmaster (Namco and CG~!), Lucky Star, Love Live!, Durarara!, Sayonara Zetsubou Sensei, and Trigun! While, I love anime games are really my passion. I really love games like the Bravely Series (Default and Second), Ace Attorney, Animal Crossing, Splatoon, Azure Striker Gunvolt, Mega man, and Mighty No. 9! I hope you guys enjoy my work!"
-
-
-		table class: "table" do
-			tr do
-				th "name"
-				th "link"
-			end
-
-			tr { td "pixiv"; td { link "http://www.pixiv.net/member.php?id=3438138" } }
-		end
-	end
-end
-
-create_page "kaiyochin", "kaiyochin" do
-	ibox do
-		h1 "kaiyochin"
-
-		hr
-
-		row do
-			col 4 do
-			end
-			col 4 do
-				image "kaiyochin/color-erika.png"
-			end
-			col 4 do
-			end
-		end
-
-		p "Fliptableのかいよちんす。好きなアニメはなのは、プリキュアとアイドルマスターです"
-		
-		p "これからもどうぞよろしくお願いします"
-
-		br
-
-		table class: "table" do
-			tr do
-				th "name"
-				th "link"
-			end
-
-			tr { td "pixiv"; td { link "http://www.pixiv.net/member.php?id=6909681	" } }
-			tr { td "twitter"; td { link "http://twitter.com/protomanV89" } }
-
-		end
-	end
-end
