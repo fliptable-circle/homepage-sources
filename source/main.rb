@@ -41,11 +41,10 @@ def post_name_to_url_path(md_file)
 end
 
 
-
 def render(md_file)
 	meta = YAML.load_file(md_file)
 	renderer = Redcarpet::Render::HTML.new()
-	markdown = Redcarpet::Markdown.new(renderer)
+	markdown = Redcarpet::Markdown.new(renderer, autolink: true, tables: true)
 	content = File.read(md_file).split("---", 2)[1]
 
 	if meta["toppic"]
@@ -55,5 +54,10 @@ def render(md_file)
 		hr
 	end
 
-	text markdown.render(content)
+	rendered = markdown.render(content)
+
+	rendered.gsub!(/<img src="(.+?)"/, '<img class="img-responsive" src="/images/\\1"')
+
+	text rendered
+
 end
