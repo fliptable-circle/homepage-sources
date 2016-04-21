@@ -23,7 +23,7 @@ GEM
     trollop (2.1.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    weaver (0.3.3)
+    weaver (0.3.4)
       activesupport
       sinatra
       trollop
@@ -33,7 +33,7 @@ PLATFORMS
 
 DEPENDENCIES
   redcarpet
-  weaver (~> 0.3.2)
+  weaver (~> 0.3.4)
 
 BUNDLED WITH
    1.11.2
