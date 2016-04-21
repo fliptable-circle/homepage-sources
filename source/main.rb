@@ -60,4 +60,12 @@ def render(md_file)
 
 	text rendered
 
+	if meta["gallery"]
+
+		gallery(
+			meta["gallery"].map{|x| "/images/" + x}, 
+			meta["gallery"].map{|x| "/images/" + x.sub(".", "-thumb.")})
+		
+	end
+
 end

@@ -5,6 +5,7 @@ include "main.rb"
 
 create_page "", "home", title_image: "chino.png" do
 
+	request_css "css/fliptable.css"
 
 	row do
 
@@ -20,12 +21,14 @@ create_page "", "home", title_image: "chino.png" do
 
 				ibox do
 					title do 
+						text "</h5>"
 						link "/news/#{post_name_to_url_path(md_file)}/" do
-							h3 do 
+							h3 do
 								text meta["title"]
 								span meta["date"], :class => "pull-right", style: "font-size: 0.7em; font-weight: normal"
 							end
 						end
+						text "<h5>"
 					end
 
 					render md_file
