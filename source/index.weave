@@ -13,7 +13,7 @@ create_page "", "home", title_image: "chino.png" do
 
 			h1 "News"
 
-			blog_files = Dir['blog/*.md'].reverse!
+			blog_files = Dir['blog/*.md'].sort.reverse
 
 			blog_files.each do |md_file|
 
