@@ -6,6 +6,7 @@ def create_page(url, title, options={}, &block)
 		menu do
 			nav "Home", :home, "/"
 			nav "About", :newspaper_o, "/about/"
+			nav "Books", :book, "/books/"
 			nav "Astrobunny", :child, "/astrobunny/"
 			nav "TronBonne", :child, "/tronbonne/"
 			nav "Kaiyochin", :child, "/kaiyochin/"

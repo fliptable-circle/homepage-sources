@@ -108,6 +108,101 @@ create_page "about", "about" do
 
 		p "基本的にastrobunnyはツインテールがついてるかわいいアニメ少女を書くのが好き、tron bonneはスプラトゥーン、ブレイブリーデフォルトとロックマン系が好き、そしてkaiyochinはプリキュアのものを描きたい。私たち三人でバラバラな作品を作る事になるかもしれないけど、どうぞよろしくお願いします。"
 
+
+	end
+end
+
+create_page "books", "books" do
+	ibox do
+
+		h1 "Books"
+
+		p "Fliptableはサークルとして今まで作ってきた作品の一覧です。"
+		
+		hr
+
+		row do
+			col 3, sm: 6, xs: 12 do
+				image "puniket32_book.png"
+				h4 "Rojak (ぷにケット32)"
+				br
+				p "Fliptableのサークルとしての初めて作った本です。本の中身はいろんなものが入ってあるので本名は語源はマレー語の「塊」という意味の言葉を使いました。"
+				br
+				p "作家： astrobunny, Kaiyochin"
+				br
+			end
+			col 3, sm: 6, xs: 12 do
+				image "comiket89book.png"
+				h4 "Twintail Paradise (C89)"
+				br
+				p "コミケの初参加。ツインテールの絵本。中身もけっこいろんなキャラが入っているけどみんなはツインテーラーです。"
+				br
+				p "作家： astrobunny, TronBonne"
+				br
+			end
+			col 3, sm: 6, xs: 12 do
+				image "comic1-10/cover.png"
+				h4 "大学生になったら何を注文すればいいですか (Comic1☆10)"
+				br
+				p "チノちゃんが大学生になった物語の頭です。絵がもっとうまくなったら続きます"
+				br
+				p "作家： astrobunny"
+				br
+			end
+			col 3, sm: 6, xs: 12 do
+				image "comic1-11book.PNG"
+				h4 "Aqours Twintails (Comic1☆11)"
+				br
+				p "ラブライブサンシャインのAqoursをツインテール化の本です。"
+				br
+				p "作家： astrobunny"
+				br
+			end
+		end
+
+
+		row do
+			col 3, sm: 6, xs: 12 do
+				image "comiket92book.PNG"
+				h4 "Twintail Collection (C92)"
+				br
+				p "ツインテールの塊のイラスト本です。この本の中には４０人のキャラが入ってあります。"
+				br
+				p "作家： astrobunny"
+				br
+			end
+			col 3, sm: 6, xs: 12 do
+				image "nicotan2017.png"
+				h4 "Nico's Birthday Surprise (にこ誕2017)"
+				br
+				p "にこちゃんの誕生日サプライズ本です！"
+				br
+				p "作家： astrobunny"
+				br
+			end
+			col 3, sm: 6, xs: 12 do
+				image "comiket93book.PNG"
+				h4 "Ruby's Diary (C93)"
+				br
+				p "ラブライブサンシャインのルビィが第二期の間にプライベートで何をしたかを想像してみた日記です。"
+				br
+				p "作家： astrobunny"
+				br
+			end
+			col 3, sm: 6, xs: 12 do
+				image "comic1-13book.PNG"
+				h4 "Ruby Under the Sun (Comic1☆13)"
+				br
+				p "ルビィは世界旅行の姿のイラスト本です。"
+				br
+				p "作家： astrobunny"
+				br
+			end
+		end
+
+		hr
+
+		p ""
 	end
 end
 
