@@ -7,4 +7,5 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints: "ad:f9:49:d0:d0:83:af:56:3d:a8:37:ad:6f:44:62:a0"
+      - run: bundle install
       - run: bash deploy.bash
