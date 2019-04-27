@@ -200,6 +200,18 @@ create_page "books", "books" do
 			end
 		end
 
+		row do
+			col 3, sm: 6, xs: 12 do
+				image "comiket95book.PNG"
+				h4 "ルビィの戸惑い (C92)"
+				br
+				p "ルビィが成長する間に戸惑ったことを書いてみました。でもこれはいったい何…？"
+				br
+				p "作家： astrobunny"
+				br
+			end
+		end
+
 		hr
 
 		p ""
