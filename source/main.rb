@@ -1,3 +1,4 @@
+require 'redcarpet'
 
 def create_page(url, title, options={}, &block)
 
